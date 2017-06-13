@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
   putchar('\n');
   FILE* output;
   output = fopen(argv[2], "w");
-  char c;
+  int c;
   while((c = fgetc(input)) != EOF) {
     for(int i = 7; i >= 0; i--) {
       if(c & (1 << i))
