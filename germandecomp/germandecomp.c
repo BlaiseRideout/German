@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
   while((c = fgetc(input)) != EOF) {
     for(int i = 7; i >= 0; i--) {
       if(c & (1 << i))
-        fprintf(output, "BEER");
+        fprintf(output, "BIER");
       else
         fprintf(output, "SCHNITZEL");
       if(i != 0)
