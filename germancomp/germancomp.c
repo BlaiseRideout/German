@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
     inputarray[i] = fgetc(input);
   int j = 0;
   for(int i = 0; i < size - 9; i++) {
-    if(toupper(inputarray[i]) == 'B' && toupper(inputarray[i + 1]) == 'E' && toupper(inputarray[i + 2]) == 'E' && toupper(inputarray[i + 3]) == 'R') {
+    if(toupper(inputarray[i]) == 'B' && (toupper(inputarray[i + 1]) == 'E' || toupper(inputarray[i + 1]) == 'I') && toupper(inputarray[i + 2]) == 'E' && toupper(inputarray[i + 3]) == 'R') {
       c |= (1 << (7 - j));
       i+=4;
       j++;
